@@ -18,7 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home',[HomeController::class,'redirect']);
+Route::get('/home',[HomeController::class,'redirect'])->
+middleware('auth','verified');
 
 Route::middleware([
     'auth:sanctum',
