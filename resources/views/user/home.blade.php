@@ -199,7 +199,7 @@
     <!-- About End -->
     
 
-    <!-- Services Start -->
+    <!-- Services Start 
     <div class="container-fluid py-5">
         <div class="container">
             <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
@@ -270,7 +270,7 @@
             </div>
         </div>
     </div>
-    <!-- Services End -->
+     Services End -->
 
 
     <!-- Products Start -->
@@ -280,7 +280,7 @@
     <!-- Products End -->
 
 
-    <!-- Offer Start -->
+    <!-- Offer Start 
     <div class="container-fluid bg-offer my-5 py-5">
         <div class="container py-5">
             <div class="row gx-5 justify-content-start">
@@ -296,10 +296,10 @@
             </div>
         </div>
     </div>
-    <!-- Offer End -->
+    Offer End -->
 
 
-    <!-- Pricing Plan Start -->
+    <!-- Pricing Plan Start 
     <div class="container-fluid py-5">
         <div class="container">
             <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
@@ -409,7 +409,7 @@
             </div>
         </div>
     </div>
-    <!-- Pricing Plan End -->
+    Pricing Plan End -->
 
 
     <!-- Team Start -->
