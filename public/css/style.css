@@ -235,6 +235,13 @@
     width: 50px;
 }
 
+.page-section {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+  }
+
 .product-item {
     padding: 30px;
 }

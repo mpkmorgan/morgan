@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,3 +30,15 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::get('/add_vet_view',[AdminController::class,'addview']);
+
+Route::post('/upload_vet',[AdminController::class,'upload']);
+
+Route::post('/appointment',[HomeController::class,'appointment']);
+
+Route::get('/myappointment',[HomeController::class,'myappointment']);
+
+Route::get('/cancel_appoint/{id}',[HomeController::class,'cancel_appoint']);
+
+Route::get('/showappointment',[AdminController::class,'showappointment']);
