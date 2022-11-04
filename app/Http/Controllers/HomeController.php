@@ -17,6 +17,12 @@ class HomeController extends Controller
                 $vet = vet::all();
                 return view ('user.home',compact('vet'));
             }
+
+            if(Auth::user()->usertype=='2')
+            {
+                return view ('vet.vetd');
+            }
+
             else
             {
                 return view ('admin.home');

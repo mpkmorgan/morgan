@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\vetdController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,3 +43,20 @@ Route::get('/myappointment',[HomeController::class,'myappointment']);
 Route::get('/cancel_appoint/{id}',[HomeController::class,'cancel_appoint']);
 
 Route::get('/showappointment',[AdminController::class,'showappointment']);
+
+Route::get('/approve/{id}',[AdminController::class,'approve']);
+
+Route::get('/cancel/{id}',[AdminController::class,'cancel']);
+
+Route::get('/showvet',[AdminController::class,'showvet']);
+
+Route::get('/deletevet/{id}',[AdminController::class,'deletevet']);
+
+Route::get('/updatevet/{id}',[AdminController::class,'updatevet']);
+
+Route::post('/editvet/{id}',[AdminController::class,'editvet']);
+
+Route::get('/vet',[VetdController::class,'viewappointment']);
+
+Route::get('/appointments',[VetdController::class,'appointments']);
+
