@@ -63,8 +63,8 @@
                             </div>
 
                             <div style="padding: 15px">
-                                <label>Emergency No.</label>
-                                <input type="text" name="emer" style="color: black" value="{{$data->emer}}">
+                                <label>Email.</label>
+                                <input type="text" name="email" style="color: black" value="{{$data->email}}">
                                 </div>
 
                                 <div style="padding: 15px">

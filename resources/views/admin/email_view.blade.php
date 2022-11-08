@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
 
+    <base href="/public">
+
     <style type="text/css">
         label
         {
@@ -37,43 +39,38 @@
 
             @endif
 
-            <form action="{{url('upload_vet')}}" method="POST" enctype="multipart/form-data">
+            <form action="{{url('sendemail',$data->id)}}" method="POST">
 
                 @csrf
 
                 <div style="padding:15px">
-                    <label>Vet Name</label>
-                    <input type="text" style="color:black;" name="name" placeholder="Write the name" required="">
+                    <label>Greeting</label>
+                    <input type="text" style="color:black;" name="greeting" >
                 </div>
 
                 <div style="padding:15px">
-                    <label>Phone</label>
-                    <input type="number" style="color:black;" name="number" placeholder="Write the phone number"required="">
+                    <label>Body</label>
+                    <input type="text" style="color:black;" name="body" >
+                </div>
+
+               
+
+                <div style="padding:15px">
+                    <label>Action Text</label>
+                    <input type="text" style="color:black;" name="actiontext" >
                 </div>
 
                 <div style="padding:15px">
-                    <label>Location</label>
-                    <select name="location" style="color: black; width: 220px" required="">
-                        <option>--Select--</option>
-                        <option value="Farm1">Farm1</option>
-                        <option value="Farm2">Farm2</option>
-                        <option value="Farm3">Farm3</option>
-                        <option value="Farm4">Farm4</option>
-                        <option value="Farm5">Farm5</option>
-
-                    </select>
-                    
+                    <label>Action URL</label>
+                    <input type="text" style="color:black;" name="actionurl" >
                 </div>
 
                 <div style="padding:15px">
-                    <label>Email</label>
-                    <input type="text" style="color:black;" name="email" placeholder="email" required="">
+                    <label>End Part</label>
+                    <input type="text" style="color:black;" name="endpart" >
                 </div>
 
-                <div style="padding:15px">
-                    <label>Vet Image</label>
-                    <input type="file" name="file" required="">
-                </div>
+                
 
                 <div style="padding:15px">
                     

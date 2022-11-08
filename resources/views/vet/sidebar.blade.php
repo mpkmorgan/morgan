@@ -28,12 +28,38 @@
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
 
-        <th style="padding: 10px; font-size: 20px">Name</th>
-        <th style="padding: 10px; font-size: 20px">Email</th>
-        <th style="padding: 10px; font-size: 20px">Phone</th>
-        <th style="padding: 10px; font-size: 20px">Message</th>
-        <th style="padding: 10px; font-size: 20px">History</th>
-        <th style="padding: 10px; font-size: 20px">Remarks</th>
+        <div align="center" style="padding-top:100px;">
+          <table>
+        <tr>
+            <th style="padding:10px">Client Name</th>
+            <th style="padding:10px">Client email</th>
+            <th style="padding:10px">Client phone</th>
+            <th style="padding:10px">Date</th>
+            <th style="padding:10px">Message</th>
+            <th style="padding:10px">Status</th>
+            <th style="padding:10px">Approve</th>
+            <th style="padding:10px">Cancel</th>
+        </tr>
+
+    
+        <tr align="center">
+          <td style="padding:10px"></td>
+          <td style="padding:10px"></td>
+          <td style="padding:10px"></td>
+          <td style="padding:10px"></td>
+          <td style="padding:10px"></td>
+          <td style="padding:10px"></td>
+          <td>
+            <a class="btn btn-success" href="">Approve</a>
+          </td>
+          <td>
+            <a class="btn btn-danger" href="">Cancel</a>
+          </td>
+        </tr>
+
+     
+          </table>
+    </div>
 
       </div>
        

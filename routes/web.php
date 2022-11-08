@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[HomeController::class,'index']);
 
-Route::get('/home',[HomeController::class,'redirect']);
+Route::get('/home',[HomeController::class,'redirect'])->middleware('auth','verified');
 
 Route::middleware([
     'auth:sanctum',
@@ -56,7 +56,11 @@ Route::get('/updatevet/{id}',[AdminController::class,'updatevet']);
 
 Route::post('/editvet/{id}',[AdminController::class,'editvet']);
 
+Route::get('/emailview/{id}',[AdminController::class,'emailview']);
+
 Route::get('/vet',[VetdController::class,'viewappointment']);
 
 Route::get('/appointments',[VetdController::class,'appointments']);
+
+Route::post('/sendemail/{id}',[AdminController::class,'sendemail']);
 

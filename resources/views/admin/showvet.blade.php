@@ -18,7 +18,7 @@
                         <th style="padding:10px">Vet Name</th>
                         <th style="padding:10px">Phone</th>
                         <th style="padding:10px">Location</th>
-                        <th style="padding:10px">Emergency No.</th>
+                        <th style="padding:10px">Email.</th>
                         <th style="padding:10px">Image</th>
                         <th style="padding:10px">Delete</th>
                         <th style="padding:10px">Update</th>
@@ -29,7 +29,7 @@
                         <td>{{$vet->name}}</td>
                         <td>{{$vet->phone}}</td>
                         <td>{{$vet->location}}</td>
-                        <td>{{$vet->emer}}</td>
+                        <td>{{$vet->email}}</td>
                         <td><img height="100" width="100" src="vetimage/{{$vet->image}}"></td>
                         <td>
                           <a onclick="return confirm('Are you sure you want to deletre this')" class="btn btn-danger" href="{{url('deletevet',$vet->id)}}">Delete</a>

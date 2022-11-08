@@ -4,7 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\Appointment;
 use App\Models\Vet;
+use App\Notifications\SendEmailNotification;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Notification;
+use PhpParser\Node\Stmt\Return_;
+
+
 
 class AdminController extends Controller
 {
@@ -26,7 +31,7 @@ class AdminController extends Controller
         $vet->name=$request->name;
         $vet->phone=$request->number;
         $vet->location=$request->location;
-        $vet->emer=$request->emer;
+        $vet->email=$request->email;
 
         $vet->save();
 
@@ -92,7 +97,7 @@ class AdminController extends Controller
         $vet->name=$Request->name;
         $vet->phone=$Request->phone;
         $vet->location=$Request->location;
-        $vet->emer=$Request->emer;
+        $vet->email=$Request->email;
 
 
 
@@ -112,5 +117,28 @@ class AdminController extends Controller
 
         return redirect()->back()->with('message','Vet updated Successfully');
 
+    }
+
+    public function emailview($id)
+
+    {
+        $data=appointment::find($id);
+        return view('admin.email_view',compact('data'));
+    }
+
+    public function sendemail (Request $request,$id)
+    {
+        $data = appointment::find($id);
+        $details = [
+            'greeting'=> $request->greeting,
+            'body'=> $request->body,
+            'actiontext'=> $request->actiontext,
+            'actionurl'=> $request->actionurl,
+            'endpart'=> $request->endpart
+        ];
+
+        Notification::send($data,new SendEmailNotification($details));
+
+        return redirect()->back()->with('message','Email Send');
     }
 }
