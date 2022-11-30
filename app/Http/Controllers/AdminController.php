@@ -35,7 +35,7 @@ class AdminController extends Controller
 
         $vet->save();
 
-        return redirect()->back()->with('message','Vet added ');
+        return redirect()->back()->with('message','Equipment added ');
 
 
     }
