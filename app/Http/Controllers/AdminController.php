@@ -115,7 +115,7 @@ class AdminController extends Controller
 
         $vet->save();
 
-        return redirect()->back()->with('message','Vet updated Successfully');
+        return redirect()->back()->with('message','Equipment updated Successfully');
 
     }
 

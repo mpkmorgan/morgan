@@ -123,7 +123,7 @@
                 <div class="col-lg-8 text-center text-lg-start">
                     <h1 class="display-1 text-uppercase text-dark mb-lg-4">eQuip</h1>
                     <h1 class="text-uppercase text-white mb-lg-4">Get equipment you need</h1>
-                    <p class="fs-4 text-white mb-lg-4">Make Your Pets Happy</p>
+                    <p class="fs-4 text-white mb-lg-4"></p>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
                         <a href="" class="btn btn-outline-light border-2 py-md-3 px-md-5 me-5">Read More</a>
                         <button type="button" class="btn-play" data-bs-toggle="modal"

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
   <head>
 
     <style type="text/css">
@@ -20,11 +21,11 @@
       <!-- partial -->
      @include('admin.navbar')
         <!-- partial -->
-        <div class="container-fluid page-body-wrapper">
+        <div class="container-fluid page-body-wrapper" style="color: blue">
 
             
         
-        <div class="container" align="center" style="padding-top: 50px">
+        <div class="container" align="center" style="padding-top: 50px" style="color: blue">
 
             @if(session()->has('message'))
 
@@ -65,7 +66,7 @@
                     
                 </div>
 
-                <div style="padding:15px">
+                <div style="padding:15px:color:blue">
                     <label>Rate</label>
                     <input type="text" style="color:black;" name="email" placeholder="price per hour" required="">
                 </div>

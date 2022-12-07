@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>PET SHOP</title>
+    <title>eQuip </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -139,7 +139,7 @@
             </tr>
                 @endforeach
         </table>
-
+    <div>If status is approved kindly check eamil</div>
     </div>
 
     <!-- JavaScript Libraries -->
