@@ -1,8 +1,8 @@
 <div class="container-fluid py-5">
     <div class="container">
         <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
-            <h6 class="text-primary text-uppercase">Team Members</h6>
-            <h1 class="display-5 text-uppercase mb-0">Qualified Pets Care Professionals</h1>
+            <h6 class="text-primary text-uppercase">Equipment List</h6>
+            <h1 class="display-5 text-uppercase mb-0">Quality tools</h1>
           </div>
           <div class="owl-carousel team-carousel position-relative" style="padding-right: 25px;">
            
@@ -23,6 +23,7 @@
                 <div class="bg-light text-center p-4">
                     <h5 class="text-uppercase">{{$vet->name}}</h5>
                     <p class="m-0">{{$vet->location}}</p>
+                    <p class="m-0">Rate per hour Ksh {{$vet->email}}</p>
                 </div>
             </div>
 

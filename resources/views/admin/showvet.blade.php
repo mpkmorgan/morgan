@@ -15,10 +15,10 @@
             
                 <table>
                     <tr>
-                        <th style="padding:10px">Vet Name</th>
+                        <th style="padding:10px">Equipment Name</th>
                         <th style="padding:10px">Phone</th>
                         <th style="padding:10px">Location</th>
-                        <th style="padding:10px">Email.</th>
+                        <th style="padding:10px">Rate.</th>
                         <th style="padding:10px">Image</th>
                         <th style="padding:10px">Delete</th>
                         <th style="padding:10px">Update</th>

@@ -17,7 +17,7 @@
           <span class="menu-icon">
             <i class="mdi mdi-file-document-box"></i>
           </span>
-          <span class="menu-title">Add Vet</span>
+          <span class="menu-title">Add Equipment</span>
         </a>
       </li>
 
@@ -35,7 +35,7 @@
           <span class="menu-icon">
             <i class="mdi mdi-file-document-box"></i>
           </span>
-          <span class="menu-title">All Vets</span>
+          <span class="menu-title">All Equipment</span>
         </a>
       </li>
 
