@@ -1,4 +1,4 @@
-  =>  Template Name    : PET SHOP - Pet Shop Website Template
+  =>  Template Name    : eQuip  - eQuip  Website Template
 
   =>  Template Link    : https://htmlcodex.com/pet-shop-website-template
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
   <head>
 
     <style type="text/css">
@@ -20,17 +21,17 @@
       <!-- partial -->
      @include('admin.navbar')
         <!-- partial -->
-        <div class="container-fluid page-body-wrapper">
+        <div class="container-fluid page-body-wrapper" style="color: blue">
 
             
         
-        <div class="container" align="center" style="padding-top: 50px">
+        <div class="container" align="center" style="padding-top: 50px" style="color: blue">
 
             @if(session()->has('message'))
 
             <div class="alert alert-success">
-                <button type="button" class="close" data-dismiss="alert"></button>
-                x
+                <button type="button" class="close" data-dismiss="alert">X</button>
+                
                 {{session()->get('message')}}
 
             </div>
@@ -42,7 +43,7 @@
                 @csrf
 
                 <div style="padding:15px">
-                    <label>Vet Name</label>
+                    <label>Name</label>
                     <input type="text" style="color:black;" name="name" placeholder="Write the name" required="">
                 </div>
 
@@ -65,13 +66,13 @@
                     
                 </div>
 
-                <div style="padding:15px">
-                    <label>Email</label>
-                    <input type="text" style="color:black;" name="email" placeholder="email" required="">
+                <div style="padding:15px:color:blue">
+                    <label>Rate</label>
+                    <input type="text" style="color:black;" name="email" placeholder="price per hour" required="">
                 </div>
 
                 <div style="padding:15px">
-                    <label>Vet Image</label>
+                    <label>Image</label>
                     <input type="file" name="file" required="">
                 </div>
 

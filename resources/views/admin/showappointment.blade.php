@@ -18,7 +18,7 @@
                     <th style="padding:10px">Client Name</th>
                     <th style="padding:10px">Client email</th>
                     <th style="padding:10px">Client phone</th>
-                    <th style="padding:10px">Vet Name</th>
+                    <th style="padding:10px">Equipment Name</th>
                     <th style="padding:10px">Date</th>
                     <th style="padding:10px">Message</th>
                     <th style="padding:10px">Status</th>
